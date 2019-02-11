@@ -23,7 +23,41 @@ I wonder whether there are other tricks, e.g for definition lists?
 
 term
 : definition one
+
 other term
 :  another definition.
+
+## Code highlights
+
+```json
+{
+  name: "wiki",
+  "version": "1.0.117",
+  "description": "A modern, lightweight and powerful wiki app built on NodeJS, Git and Markdown",
+  "main": "wiki.js",
+  "scripts": {
+    "start": "node wiki start",
+    "stop": "node wiki stop",
+    "restart": "node wiki restart",
+    "build": "node tools/fuse",
+    "dev": "node tools/fuse -d",
+    "dev-configure": "node tools/fuse -c",
+    "test": "jest",
+    "postinstall": "opencollective postinstall"
+  }
+} 
+```
+
+```js
+router.get('/', (req, res) => {
+  res.redirect('/admin/profile')
+})
+
+router.get('/profile', (req, res) => {
+  if (res.locals.isGuest) {
+    return res.render('error-forbidden')
+  }
+
+```
 	
 ## How do I structure sections on the same page
