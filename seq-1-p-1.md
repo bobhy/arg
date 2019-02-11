@@ -48,7 +48,10 @@ other term
 } 
 ```
 
-```js
+comment in between 
+
+
+```javascript
 router.get('/', (req, res) => {
   res.redirect('/admin/profile')
 })
@@ -58,6 +61,28 @@ router.get('/profile', (req, res) => {
     return res.render('error-forbidden')
   }
 
+
+
 ```
-	
+
+more tries
+
+```sql
+select
+  able
+  , baker
+  , charlie 
+  , case when x is 1 then 'argle' else 'bargle' end as foo
+from 
+  a join
+  b on a.x = b.y
+```
+
+## and tables
+
+| simple | table |
+| -----: | ----- |
+|      a | b     |
+{.is-danger}
+
 ## How do I structure sections on the same page
